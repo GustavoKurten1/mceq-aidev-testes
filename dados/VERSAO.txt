@@ -1,0 +1,3 @@
+repositorio: hao-li/AIDev
+commit: 3ca0045773097b138b064550dfd6e72229f40bee
+data_de_acesso: 2026-11-09

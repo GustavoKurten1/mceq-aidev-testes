@@ -1,0 +1,124 @@
+
+================================================================
+1. ORIGEM E VERSÃO
+================================================================
+Base: hao-li/AIDev (Hugging Face)
+Commit (versão): 3ca0045773097b138b064550dfd6e72229f40bee
+Data de acesso: 2026-11-09
+
+================================================================
+2. TAMANHO DAS TABELAS (linhas)
+================================================================
+pull_request: 33,596
+pr_commit_details: 711,923
+pr_task_type: 33,596
+repository: 2,807
+
+================================================================
+3. PRs POR AGENTE (pull_request)
+================================================================
+agent
+OpenAI_Codex    21799
+Copilot          4970
+Devin            4827
+Cursor           1541
+Claude_Code       459
+
+================================================================
+4. PERÍODO (created_at)
+================================================================
+Geral: 2024-12-24 00:23:09+00:00 até 2025-07-30 19:36:13+00:00
+Datas que não puderam ser lidas: 0
+                                   min                       max
+agent                                                           
+Claude_Code  2025-02-24 19:52:57+00:00 2025-07-30 17:39:29+00:00
+Copilot      2025-03-13 19:27:28+00:00 2025-07-30 13:01:33+00:00
+Cursor       2025-02-06 18:53:03+00:00 2025-07-30 08:02:20+00:00
+Devin        2024-12-24 00:23:09+00:00 2025-07-30 17:24:51+00:00
+OpenAI_Codex 2025-05-16 16:03:15+00:00 2025-07-30 19:36:13+00:00
+
+================================================================
+5. DADOS AUSENTES (nulos por coluna)
+================================================================
+-- pull_request
+id            0
+agent         0
+created_at    0
+repo_id       0
+-- pr_commit_details
+sha             0
+pr_id           0
+filename     5132
+status       5132
+additions    5132
+deletions    5132
+-- pr_task_type
+id       0
+agent    0
+type     0
+-- repository
+id           0
+language    37
+stars        0
+
+================================================================
+6. DUPLICADOS
+================================================================
+pull_request: linhas com id repetido = 0
+pr_commit_details: linhas idênticas (sha, pr_id, arquivo, status, linhas) = 23
+pr_task_type: linhas com id repetido = 0
+repository: linhas com id repetido = 0
+
+================================================================
+7. COBERTURA ENTRE TABELAS
+================================================================
+PRs sem nenhuma linha em pr_commit_details: 16
+PRs com commits mas sem lista de arquivos (filename nulo): 475
+Linhas de pr_commit_details com pr_id fora de pull_request: 0
+PRs sem tipo em pr_task_type: 0
+PRs com repo_id fora de repository: 0
+
+================================================================
+8. TIPO DO PR (pr_task_type, classificado por LLM)
+================================================================
+type
+feat        14450
+fix          8106
+docs         3887
+test         2356
+refactor     2288
+chore         896
+build         627
+ci            411
+perf          340
+style         188
+other          31
+revert         16
+
+================================================================
+9. PRÉVIA DO RECORTE: PRs feat/fix com lista de arquivos, por agente
+================================================================
+agent
+OpenAI_Codex    14353
+Copilot          3322
+Devin            3146
+Cursor           1026
+Claude_Code       363
+Total: 22,210
+
+================================================================
+10. TRUNCAGEM EM 30 ITENS
+================================================================
+Na coleta da v3 as listas por PR não eram paginadas: no máximo 30 commits por PR.
+Aqui: commits (sha) distintos por PR em pr_commit_details, só PRs de pull_request.
+PRs com commits em pr_commit_details: 33,580
+Máximo de commits distintos em um PR: 30
+PRs com mais de 30 commits distintos: 0
+PRs com exatamente 30 commits distintos (atingem o limite), por agente:
+agent
+OpenAI_Codex    55
+Copilot         40
+Devin           90
+Cursor          20
+Claude_Code     22
+Total: 227
