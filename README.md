@@ -28,7 +28,7 @@ python proveniencia.py          baixa os dados e gera saida_proveniencia.txt
 python analise.py               limpeza, testes e figura (cerca de 3 minutos)
 ```
 
-O `requirements.txt` fixa as versões exatas usadas no artigo. Com elas, `python analise.py` reproduz os arquivos de `resultados/` byte a byte; `git status` não deve mostrar nenhuma mudança neles depois da execução.
+O `requirements.txt` fixa as versões exatas usadas no artigo. Com elas, `python analise.py` reproduz todos os números de `resultados/resultado.txt`. Entre Linux e Windows, só mudam a 16ª casa decimal de dois p-valores em `resultados/pares.csv` e a compressão do PNG da figura, cujos pixels são idênticos.
 
 ## Arquivos
 
