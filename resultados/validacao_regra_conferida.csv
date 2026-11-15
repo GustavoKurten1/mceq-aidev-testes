@@ -1,0 +1,101 @@
+pr_id,arquivo,regra_diz_teste,conferencia_eh_teste,tipo,observacao
+3220657817,packages/image-server/test/images/output/auto-format-webp.webp,True,sim,fixture_ou_saida_esperada,imagem de saída esperada de teste
+3239907399,apps/server/src/api/v2/slack/services/slack-oauth-service.int.test.ts,True,sim,codigo_de_teste,
+3244848585,packages/ai/src/tools/file-tools/ls-files-tool/ls-files-impl.test.ts,True,sim,codigo_de_teste,
+3272147769,frontend/internal-packages/agent/src/chat/workflow/nodes/designSchemaNode.retry.test.ts,True,sim,codigo_de_teste,
+3186642813,x/tokenfilter/ibc_middleware_test.go,True,sim,codigo_de_teste,
+3169069018,src/graph/test/ideal/append-nodes.ts,True,sim,codigo_de_teste,código de teste (t.test) em pasta test/ideal; conferido pelo patch
+3209484916,tests/end_to_end/end_to_end.cpp,True,sim,codigo_de_teste,
+3154236165,sdk/ai/azure-ai-projects/tests/test_data/datasets/data_subfolder/data_file4.txt,True,sim,fixture_ou_saida_esperada,arquivo de dados de teste
+3147795708,packages/lambda/src/test/integration/renders/seamless-audio.test.ts,True,sim,codigo_de_teste,
+3084795018,tests/library/screenshot.spec.ts,True,sim,codigo_de_teste,
+3259102188,packages/create-vite/__tests__/cli.spec.ts,True,sim,codigo_de_teste,
+3141802223,test/Resources/TestScripts/CustomHeadersMiddleware/CSharp/host.json,True,sim,fixture_ou_saida_esperada,configuração usada por script de teste
+3181644613,tests/compiler/py/fetch_stmt.mochi,True,sim,fixture_ou_saida_esperada,programa de entrada da suíte de testes do mochi
+3266718519,tests/rosetta/transpiler/CS/call-a-function-10.cs,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3247657317,transpiler/x/c/transpiler_test.go,True,sim,codigo_de_teste,
+3226048318,tests/machine/x/zig/q3.zig,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3237762862,tests/machine/x/cpp/group_by_multi_join_sort.cpp,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3222396951,tests/machine/x/scala/load_yaml.scala,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3245131623,tests/transpiler/x/dart/len_string.out,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3273046317,tests/a2mochi/x/prolog/slice.ast,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3212048390,tests/machine/x/scheme/typed_var.error,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3245290285,tests/transpiler/x/cobol/for_loop.cob,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3211853062,tests/machine/x/lua/membership.out,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3259216194,tests/rosetta/transpiler/Kotlin/align-columns.error,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3153710701,compile/rust/compiler_test.go,True,sim,codigo_de_teste,
+3266550024,tests/rosetta/ir/date-manipulation.ir,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3266880534,tests/rosetta/ir/abc-problem.bench,True,sim,fixture_ou_saida_esperada,resultado de benchmark guardado em tests/; conferido pelo patch
+3245851618,tests/transpiler/x/rs/len_builtin.rs,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3256288009,tests/rosetta/transpiler/Kotlin/abundant-deficient-and-perfect-number-classifications.out,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3094720463,middleware/timeout/timeout_test.go,True,sim,codigo_de_teste,
+3170127249,tests/vm/valid/len_builtin.ir.out,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3181823036,tests/dataset/job/q22.mochi,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3237814041,tests/machine/x/ocaml/map_literal_dynamic.error,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3248288151,tests/transpiler/x/clj/count_builtin.clj,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3168743104,tests/mochi_in_mochi/types/valid/division.golden,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3093826815,tests/unit/test_telemetry_client.py,True,sim,codigo_de_teste,
+3174441525,tests/compiler/c/simple_fn.c.out,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3203274864,tests/dataset/slt/out/slt_lang_aggfunc/case56.out,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3242607368,tests/rosetta/out/Kotlin/call-a-function-11.kt,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3226145408,tests/machine/x/erlang/group_by_multi_join.erl,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3242768113,tests/rosetta/out/TypeScript/README.md,True,nao,documentacao,README que documenta saídas geradas dentro de tests/; conferido pelo patch; não é teste
+3274373623,tests/a2mochi/x/py/min_max_builtin.mochi,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3206266027,tests/any2mochi/scheme/list_push.scm.mochi,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3222320189,tests/machine/x/java/string_index.java,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3267032844,tests/rosetta/transpiler/C/benfords-law.c,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3161472093,pkg/validate/validate_stacks_test.go,True,sim,codigo_de_teste,
+3272200426,tools/a2mochi/x/java/transform_test.go,True,sim,codigo_de_teste,
+3274678042,tests/json-ast/x/cs/if_else.cs.json,True,sim,fixture_ou_saida_esperada,saída esperada ou entrada da suíte de testes do mochi
+3230307499,test/cli/install/bun-add.test.ts,True,sim,codigo_de_teste,
+3212218608,pkg/provider/azure_vmssflex_test.go,True,sim,codigo_de_teste,
+2816227864,public/locales/en/status.json,False,nao,nao_teste,
+2982621538,apps/api/v2/src/modules/conferencing/services/conferencing.service.ts,False,nao,nao_teste,
+2982621538,apps/api/v2/src/modules/organizations/routing-forms/inputs/get-routing-forms-params.input.ts,False,nao,nao_teste,
+3054632631,docs/multiple_model_config.md,False,nao,nao_teste,
+3129554303,apps/laboratory/app/library/solana/page.tsx,False,nao,nao_teste,
+3054396306,backend/app/controllers/internal/settings/bank_accounts_controller.rb,False,nao,nao_teste,
+3101326488,packages/cli/src/cli/localizer/_types.ts,False,nao,nao_teste,
+3049889451,src/features/lipSync/lipSync.ts,False,nao,nao_teste,
+3226808853,README.md,False,nao,nao_teste,
+3231788654,zeebe/gateway-rest/src/main/java/io/camunda/zeebe/gateway/rest/annotation/RequiresSecondaryStorage.java,False,nao,nao_teste,
+3125850603,internal/transformers/estransforms/namedevaluation.go,False,nao,nao_teste,
+3159591262,docker/postgresql/requirements.txt,False,nao,nao_teste,
+3091868582,packages/ui/registry/other-transition-wrappers-text-effect-wrapper.json,False,nao,nao_teste,
+3118960106,src/vs/workbench/contrib/terminal/browser/terminal.ts,False,nao,nao_teste,
+3212617082,docs/en/baselines/Azure.GA_2024_06.md,False,nao,nao_teste,
+3158819982,python/packages/autogen-ext/src/autogen_ext/models/openai/_model_info.py,False,nao,nao_teste,
+3193467739,Cargo.toml,False,nao,nao_teste,
+3141477809,specification/dataprotection/resource-manager/Microsoft.DataProtection/stable/2025-07-01/examples/BackupInstanceOperations/ResumeProtection.json,False,nao,nao_teste,
+3247852158,build/lib/mineru/utils/models_download_utils.py,False,nao,nao_teste,
+3147827082,src/core/Entry.h,False,nao,nao_teste,
+3092813223,documentation/integrations/script.md,False,nao,nao_teste,
+3176922585,extensions/markdown-language-features/src/client/client.ts,False,nao,nao_teste,
+3152602811,src/TestFramework/TestFramework.Extensions/Resources/xlf/FrameworkExtensionsMessages.pl.xlf,False,nao,nao_teste,"código-fonte de framework de testes (localização), não teste do projeto"
+3165803170,libs/dal/src/repositories/localization-group/localization-group.repository.ts,False,nao,nao_teste,
+3244614754,examples/react/asyncBatch/package.json,False,nao,nao_teste,
+3167273719,examples/bun-hot-websockets.js,False,nao,nao_teste,
+3239473570,flutter/lib/src/native/cocoa/cocoa_replay_recorder.dart,False,nao,nao_teste,
+3171819372,static/app/gettingStartedDocs/javascript/tanstackstart-react.tsx,False,nao,nao_teste,
+3131810994,src/bun.js/node/node_fs_watcher.zig,False,nao,nao_teste,
+3132590185,runtime/ffi/python/python.go,False,nao,nao_teste,
+3070896486,alpha_factory_v1/demos/solving_agi_governance/README.md,False,nao,nao_teste,
+3090126527,src/components/CustomPromptSyntaxInstruction.tsx,False,nao,nao_teste,
+3088604097,autogpt_platform/backend/backend/data/execution.py,False,nao,nao_teste,
+3080526982,alpha_factory_v1/demos/meta_agentic_tree_search_v0/mats/__init__.py,False,nao,nao_teste,
+3115759878,exampleSite/content/docs/guide/configuration.fa.md,False,nao,nao_teste,
+3117327220,lib/view/page/server/tab/tab.dart,False,nao,nao_teste,
+3084032159,samples/BehaviorsTestApplication/Views/MainView.axaml,False,nao,nao_teste,aplicativo de exemplo com Test no nome; conferido pelo patch
+3084032159,samples/BehaviorsTestApplication/Views/Pages/AnimationCompletedTriggerView.axaml.cs,False,nao,nao_teste,aplicativo de exemplo com Test no nome
+3200306501,samples/microsoft/java/mslearn-resources/quickstart/src/main/java/com/azure/ai/foundry/samples/utils/ConfigLoader.java,False,nao,nao_teste,
+3150694563,examples/leetcode-out/go/331/verify-preorder-serialization-of-a-binary-tree.go,False,nao,nao_teste,saída gerada guardada em examples/
+3118367388,wormhole-connect/src/hooks/useExternalSearch.ts,False,nao,nao_teste,
+3093046735,apps/desktop/src/routes/camera.tsx,False,nao,nao_teste,
+3224577280,README.md,False,nao,nao_teste,
+3216706697,core-web/libs/sdk/angular/package.json,False,nao,nao_teste,
+3007785025,backend/tool_instance_v2/constants.py,False,nao,nao_teste,
+3165597086,.github/workflows/release.yml,False,nao,nao_teste,
+3260887009,openagents-tauri/src-tauri/src/lib.rs,False,nao,nao_teste,
+3245454530,.swarm/memory.db,False,nao,nao_teste,arquivo binário de estado
+3138222448,src/evm/prompts/implement-sha256-precompile-enhanced.md,False,nao,nao_teste,
+3133058562,docs/LICENSE,False,nao,nao_teste,

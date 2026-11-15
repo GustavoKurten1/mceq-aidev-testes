@@ -8,7 +8,7 @@
 
 | Campo | Registro |
 | --- | --- |
-| Problema | Peng et al. (2023) mediram o ganho de produtividade com IA sem olhar para testes, e LLMs em teste unitário são avaliados sobretudo em benchmarks (Zhang et al., 2025). Estudos com a base AIDev passaram a examinar testes em PRs de agentes (Haque et al., 2026); este projeto compara os agentes entre si pela proporção de linhas de teste, com teste de hipótese. |
+| Problema | Peng et al. (2023) mediram o ganho de produtividade com IA sem olhar para testes, e LLMs em teste unitário são avaliados sobretudo em benchmarks (Zhang et al., 2025). Com a base AIDev, Haque, Ingale e Csallner (2026) descrevem a presença de testes em PRs de agentes e relatam variação entre agentes; este projeto testa essa diferença de forma confirmatória, com tamanho de efeito e verificação por repositório. |
 | Pergunta | Em PRs de funcionalidade e de correção abertos por agentes de IA em projetos open source, a proporção das linhas adicionadas que está em arquivos de teste difere entre Codex, Copilot, Devin, Cursor e Claude Code? |
 | H0 / H1 | H0: µCodex = µCopilot = µDevin = µCursor = µClaude Code (no Kruskal-Wallis, distribuições iguais). H1, bilateral: ao menos um agente difere. |
 | VI e níveis | Agente que abriu o PR, 5 níveis. |
@@ -35,3 +35,10 @@
 **Exploratórias:** (i) incluir os PRs com 30 commits, definida antes da execução; (ii) concentração por repositório e um ponto por par repositório-agente, definidas em 15/11/2026, depois de ver os resultados.
 
 **Ameaças vistas depois da análise (15/11/2026):** PRs do mesmo repositório não são independentes, e 47% dos PRs do Codex vêm de um só repositório; a regra conta fixtures e saídas esperadas em pastas de teste como linhas de teste.
+
+**Referências**
+- GHALEB, T. A. Fingerprinting AI Coding Agents on GitHub. In: MSR 2026. arXiv:2601.17406.
+- HAQUE, S.; INGALE, S.; CSALLNER, C. An Empirical Study of Tests in Agentic Pull Requests. In: MSR 2026 (Mining Challenge). DOI: 10.1145/3793302.3793604.
+- LI, H.; ZHANG, H.; HASSAN, A. E. AIDev: Studying AI Coding Agents on GitHub. In: MSR 2026. DOI: 10.1145/3793302.3797249. arXiv:2602.09185.
+- PENG, S.; KALLIAMVAKOU, E.; CIHON, P.; DEMIRER, M. The Impact of AI on Developer Productivity: Evidence from GitHub Copilot. arXiv:2302.06590, 2023.
+- ZHANG, Q.; FANG, C.; GU, S.; SHANG, Y.; CHEN, Z.; XIAO, L. Large Language Models for Unit Testing: A Systematic Literature Review. arXiv:2506.15227, 2025.

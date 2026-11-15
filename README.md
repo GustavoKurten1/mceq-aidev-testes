@@ -38,5 +38,6 @@ O `requirements.txt` fixa as versões exatas usadas no artigo. Com elas, `python
 - `resultados/resultado.txt`: todos os números do artigo, incluindo as análises exploratórias.
 - `resultados/limpeza.csv`, `descritiva.csv`, `pares.csv`: tabelas da limpeza, da descritiva e das comparações par a par.
 - `resultados/amostra_validacao_regra.csv`: 100 arquivos sorteados para conferência manual da regra de arquivo de teste.
+- `resultados/validacao_regra_conferida.csv`: a mesma amostra conferida à mão (feita com o Claude em 15/11/2026, pelo caminho e, nos casos duvidosos, pelo patch). Não é gerada pelo script, então `analise.py` não a sobrescreve.
 - `dados/limpos/prs_limpos.csv`: um PR por linha, com a VD.
 - `figuras/vd_por_agente.png`: média da VD por agente com IC de 95%.
