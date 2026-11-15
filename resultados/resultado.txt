@@ -1,0 +1,110 @@
+LIMPEZA (PRs restantes por etapa)
+                                                etapa  OpenAI_Codex  Copilot  Devin  Cursor  Claude_Code  total
+                         0. PRs no subconjunto curado         21799     4970   4827    1541          459  33596
+                                  1. Tipo feat ou fix         14357     3654   3153    1027          365  22556
+                             2. Com lista de arquivos         14353     3322   3146    1026          363  22210
+                   3. Sem PRs no limite de 30 commits         14324     3293   3088    1009          347  22061
+4. Com linhas adicionadas após excluir lock e gerados         14259     3269   3071    1005          346  21950
+Linhas idênticas removidas de pr_commit_details: 23
+Linhas de arquivos de lock/gerados excluídas: 11,427
+
+======================================================================
+ANÁLISE CONFIRMATÓRIA (planejada no protocolo)
+======================================================================
+n = 21,950 PRs em k = 5 grupos independentes
+
+Descritiva da VD (proporção de linhas adicionadas em arquivos de teste):
+     agente     n  media  ic95_inf  ic95_sup     dp  mediana     q1     q3  pct_com_teste
+      Codex 14259 0.2823    0.2764    0.2883 0.3636   0.0278 0.0000 0.5455         0.5157
+    Copilot  3269 0.2818    0.2700    0.2936 0.3434   0.0515 0.0000 0.5676         0.5414
+      Devin  3071 0.1808    0.1702    0.1914 0.2996   0.0000 0.0000 0.3023         0.3911
+     Cursor  1005 0.1213    0.1059    0.1368 0.2494   0.0000 0.0000 0.0627         0.2955
+Claude Code   346 0.2098    0.1786    0.2409 0.2945   0.0017 0.0000 0.4141         0.5087
+
+Pressupostos da ANOVA (alfa = 0,05):
+  Levene (centro na mediana): W = 111.40, p = 3.54e-94
+  Normalidade dos resíduos (D'Agostino-Pearson): K2 = 3008.7, p = 0
+  Assimetria = 0.98; curtose (excesso) = -0.53
+  Pressupostos atendidos: não
+
+ANOVA de um fator: F(4, 21945) = 100.05, p = 1.49e-84; eta2 = 0.0179 [IC95% 0.0152; 0.0210]
+Kruskal-Wallis: H(4) = 421.05, p = 7.86e-90; epsilon2 = 0.0192 [IC95% 0.0161; 0.0226] (pequeno)
+Teste principal pela regra do protocolo: Kruskal-Wallis + Dunn (Holm)
+Decisão: rejeita H0 (alfa = 0.05)
+
+Comparações par a par (p ajustado; diferença de médias em pontos da proporção, IC95% de Welch; delta de Cliff):
+                  par      z         p  p_ajustado  significativo  dif_medias  ic95_inf  ic95_sup  delta_cliff      efeito
+      Codex x Copilot -1.055    0.2916      0.2916          False   0.0005172  -0.01268   0.01372    -0.009275 desprezível
+        Codex x Devin  14.73 4.219e-49   3.797e-48           True      0.1015   0.08936    0.1137       0.1566     pequeno
+       Codex x Cursor  14.82 1.106e-49   1.106e-48           True       0.161    0.1444    0.1775       0.2573     pequeno
+  Codex x Claude Code  2.335   0.01954     0.03908           True     0.07255   0.04085    0.1042      0.06995 desprezível
+      Copilot x Devin  12.47 1.044e-35   7.306e-35           True       0.101   0.08516    0.1168       0.1732     pequeno
+     Copilot x Cursor  13.98 2.186e-44   1.749e-43           True      0.1605    0.1411    0.1799       0.2787     pequeno
+Copilot x Claude Code  2.609  0.009079     0.02724           True     0.07203   0.03876    0.1053      0.08876 desprezível
+       Devin x Cursor  5.246 1.557e-07   7.786e-07           True     0.05946   0.04075   0.07818       0.1061 desprezível
+  Devin x Claude Code -2.927  0.003428     0.01371           True    -0.02897  -0.06185  0.003907     -0.09941 desprezível
+ Cursor x Claude Code -5.721  1.06e-08   6.358e-08           True    -0.08843   -0.1232  -0.05371      -0.2139     pequeno
+
+======================================================================
+ANÁLISE EXPLORATÓRIA DE SENSIBILIDADE (inclui PRs no limite de 30 commits)
+======================================================================
+n = 22,099 PRs em k = 5 grupos independentes
+
+Descritiva da VD (proporção de linhas adicionadas em arquivos de teste):
+     agente     n  media  ic95_inf  ic95_sup     dp  mediana     q1     q3  pct_com_teste
+      Codex 14288 0.2820    0.2760    0.2880 0.3634   0.0270 0.0000 0.5446         0.5155
+    Copilot  3298 0.2820    0.2703    0.2937 0.3425   0.0616 0.0000 0.5655         0.5437
+      Devin  3129 0.1825    0.1720    0.1930 0.2997   0.0000 0.0000 0.3056         0.3992
+     Cursor  1022 0.1219    0.1066    0.1372 0.2489   0.0000 0.0000 0.0677         0.2984
+Claude Code   362 0.2137    0.1835    0.2439 0.2926   0.0062 0.0000 0.4141         0.5249
+
+Pressupostos da ANOVA (alfa = 0,05):
+  Levene (centro na mediana): W = 110.78, p = 1.18e-93
+  Normalidade dos resíduos (D'Agostino-Pearson): K2 = 3022.0, p = 0
+  Assimetria = 0.98; curtose (excesso) = -0.53
+  Pressupostos atendidos: não
+
+ANOVA de um fator: F(4, 22094) = 99.16, p = 8.39e-84; eta2 = 0.0176 [IC95% 0.0150; 0.0207]
+Kruskal-Wallis: H(4) = 409.19, p = 2.87e-87; epsilon2 = 0.0185 [IC95% 0.0156; 0.0218] (pequeno)
+Teste principal pela regra do protocolo: Kruskal-Wallis + Dunn (Holm)
+Decisão: rejeita H0 (alfa = 0.05)
+
+Comparações par a par (p ajustado; diferença de médias em pontos da proporção, IC95% de Welch; delta de Cliff):
+                  par      z         p  p_ajustado  significativo  dif_medias  ic95_inf  ic95_sup  delta_cliff      efeito
+      Codex x Copilot -1.241    0.2145      0.2145          False  -1.177e-05  -0.01313   0.01311     -0.01109 desprezível
+        Codex x Devin  14.28 3.043e-46   2.739e-45           True      0.0995   0.08742    0.1116       0.1507     pequeno
+       Codex x Cursor  14.81 1.271e-49   1.271e-48           True      0.1601    0.1437    0.1765       0.2549     pequeno
+  Codex x Claude Code  1.949   0.05131      0.1026          False      0.0683   0.03748   0.09912      0.05758 desprezível
+      Copilot x Devin  12.25 1.627e-34   1.139e-33           True     0.09951   0.08379    0.1152       0.1693     pequeno
+     Copilot x Cursor  14.06 6.291e-45   5.033e-44           True      0.1601    0.1409    0.1793       0.2787     pequeno
+Copilot x Claude Code  2.306   0.02109     0.06327          False     0.06831    0.0359    0.1007      0.07898 desprezível
+       Devin x Cursor  5.488 4.058e-08   2.029e-07           True     0.06058   0.04204   0.07911       0.1109 desprezível
+  Devin x Claude Code -3.208  0.001338    0.005353           True     -0.0312   -0.0632 0.0008049      -0.1067 desprezível
+ Cursor x Claude Code -6.144 8.024e-10   4.814e-09           True    -0.09177   -0.1256  -0.05792      -0.2264     pequeno
+
+======================================================================
+ANÁLISE EXPLORATÓRIA: AGRUPAMENTO DOS PRs POR REPOSITÓRIO
+======================================================================
+     agente   prs  repositorios  pct_maior_repo  pct_10_maiores
+      Codex 14259          1064           0.474           0.682
+    Copilot  3269           803           0.050           0.191
+      Devin  3071           246           0.100           0.430
+     Cursor  1005           256           0.071           0.313
+Claude Code   346           177           0.075           0.286
+
+Maior repositório de cada agente: VD média dentro e fora dele
+  Codex: mochilang/mochi (6,756 PRs, média 0.4432); demais repositórios (7,503 PRs, média 0.1375)
+  Copilot: microsoft/vscode (164 PRs, média 0.3035); demais repositórios (3,105 PRs, média 0.2807)
+  Devin: crewAIInc/crewAI (306 PRs, média 0.6269); demais repositórios (2,765 PRs, média 0.1314)
+  Cursor: ryokun6/ryos (71 PRs, média 0.0000); demais repositórios (934 PRs, média 0.1306)
+  Claude Code: OpenAgentsInc/openagents (26 PRs, média 0.0250); demais repositórios (320 PRs, média 0.2248)
+
+VD média por repositório (um ponto por par repositório-agente):
+     agente  repositorios  media  mediana
+      Codex          1064 0.1345   0.0000
+    Copilot           803 0.2523   0.1296
+      Devin           246 0.1239   0.0005
+     Cursor           256 0.1190   0.0000
+Claude Code           177 0.1978   0.0030
+Kruskal-Wallis: H(4) = 102.23, p = 3.29e-21; epsilon2 = 0.0402 (n = 2,546)
+
